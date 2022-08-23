@@ -140,6 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="SelectionSort.cpp" />
+    <ClCompile Include="BubbleSort.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="swap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BubbleSort.h" />
+    <ClInclude Include="swap.h" />
+    <ClInclude Include="SelectionSort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

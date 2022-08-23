@@ -142,11 +142,11 @@
     <ClCompile Include="SelectionSort.cpp" />
     <ClCompile Include="BubbleSort.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="swap.cpp" />
+    <ClCompile Include="Tools.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BubbleSort.h" />
-    <ClInclude Include="swap.h" />
+    <ClInclude Include="Tools.h" />
     <ClInclude Include="SelectionSort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -2,7 +2,7 @@
 using namespace std;
 
 #include "SelectionSort.h"
-#include "swap.h"
+#include "Tools.h"
 
 void selectionSort(int inputData[], int size)
 {
@@ -14,7 +14,10 @@ void selectionSort(int inputData[], int size)
 			if (inputData[i] < inputData[currMinimumInd])
 				currMinimumInd = i;
 		}
-
+		printSort(inputData, size);
+		cout << " --> ";
 		swap(&inputData[currMinimumInd], &inputData[index]);
+		printSort(inputData, size);
+		cout << endl;
 	}
 }

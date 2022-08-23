@@ -3,6 +3,7 @@ using namespace std;
 
 #include "SelectionSort.h"
 #include "BubbleSort.h"
+#include "InsertionSort.h"
 
 void printSort(int inputData[], int size);
 
@@ -23,7 +24,10 @@ int main()
 			inputData[i] = unsortedData[i];
 
 		cout << "Please select your sorting algorithm" << endl;
-		cout << "1. Selection Sort" << endl << "2. Bubble Sort" << endl << "0. Exit" << endl;
+		cout << "1. Selection Sort" << endl 
+			<< "2. Bubble Sort" << endl 
+			<< "3. Insertion Sort" << endl 
+			<< "0. Exit" << endl;
 
 		cin >> userInput;
 		cin.ignore();
@@ -37,6 +41,10 @@ int main()
 		case 2:
 			cout << "---Bubble Sort---" << endl << endl;
 			bubbleSort(inputData, arraySize);
+			break;
+		case 3:
+			cout << "---Insertion Sort---" << endl << endl;
+			insertionSort(inputData, arraySize);
 			break;
 		case 0:
 			cout << "Goodbye";
